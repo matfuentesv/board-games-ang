@@ -1,0 +1,55 @@
+.navbar-custom {
+  background-color: #3a7bd5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+}
+
+.navbar-custom .navbar-brand {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: white;
+}
+
+.navbar-custom .navbar-brand img {
+  margin-right: 15px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.navbar-custom .nav-link {
+  color: white;
+  transition: color 0.3s;
+  font-size: 1.2em;
+  margin-right: 1rem; /* Añadir espacio entre los enlaces */
+}
+
+.navbar-custom .nav-link:hover {
+  color: #ff6f61;
+}
+
+.navbar-nav.ml-auto {
+  margin-left: auto;
+}
+
+.navbar-toggler {
+  border-color: white;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.form-inline {
+  display: flex;
+  align-items: center;
+}
+
+.form-inline .form-control {
+  width: 200px;
+}
+
+.form-inline .btn {
+  margin-left: 10px;
+}
