@@ -31,12 +31,16 @@ export const routes: Routes = [
         loadChildren: () => import('./modules/pages/kids').then(r => r.kidsRoutes)
       },
       {
-        path: 'account',
-        loadChildren: () => import('./modules/pages/account').then(r => r.accountRoutes)
+        path: 'login',
+        loadChildren: () => import('./modules/pages/login').then(r => r.loginRoutes)
       },
       {
         path: 'register',
         loadChildren: () => import('./modules/pages/register').then(r => r.registerRoutes)
+      },
+      {
+        path: 'recover-password',
+        loadChildren: () => import('./modules/pages/recover-password').then(r => r.recoverPasswordRoutes)
       }
      ]
   }

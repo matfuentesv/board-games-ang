@@ -24,9 +24,19 @@
       </li>
     </ul>
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link"  [routerLink]="['account']"><i class="fas fa-user"></i> Mi cuenta</a>
+      <li class="nav-item" *ngIf="userName; else noUser">
+        <a class="nav-link" href="#" style="color: white;">Hola, {{ userName }}</a>
+        <ul class="submenu">
+          <li><a href="#">Mi cuenta</a></li>
+          <li *ngIf="userRole === 'admin'"><a [routerLink]="['/admin']">Administración</a></li>
+          <li><a (click)="logout()" href="#">Cerrar sesión</a></li>
+        </ul>
       </li>
+      <ng-template #noUser>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/login']"><i class="fas fa-user"></i> Mi cuenta</a>
+        </li>
+      </ng-template>
       <li class="nav-item">
         <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> Mi carrito</a>
       </li>

@@ -28,12 +28,16 @@ export const pagesRoutes: Routes = [
         loadChildren: () => import('./kids').then(r => r.kidsRoutes)
       },
       {
-        path: 'account',
-        loadChildren: () => import('./account').then(r => r.accountRoutes)
+        path: 'login',
+        loadChildren: () => import('./login').then(r => r.loginRoutes)
       },
       {
         path: 'register',
         loadChildren: () => import('./register').then(r => r.registerRoutes)
+      },
+      {
+        path: 'recover-password',
+        loadChildren: () => import('./recover-password').then(r => r.recoverPasswordRoutes)
       }
     ]
   }

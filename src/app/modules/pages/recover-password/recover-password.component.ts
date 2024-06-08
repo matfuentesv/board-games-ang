@@ -9,19 +9,20 @@ import {RouterLink} from "@angular/router";
 
 
 @Component({
-  selector: 'app-account',
-  templateUrl: './account.component.html',
-  styleUrls: ['./account.component.scss'],
+  selector: 'app-recover-password',
+  templateUrl: './recover-password.component.html',
+  styleUrls: ['./recover-password.component.scss'],
   standalone: true,
   imports: [CommonModule, MatDialogModule, RouterLink]
 })
-export class AccountComponent   {
+export class RecoverPasswordComponent implements OnInit {
 
+  products: Products[] = [];
 
+  constructor(private dataService: DataService,public dialog: MatDialog) { }
 
-  constructor() { }
-
-
+  ngOnInit(): void {
+  }
 
 
 }
