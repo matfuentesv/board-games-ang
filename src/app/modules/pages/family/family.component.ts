@@ -8,13 +8,13 @@ import {DetailProductComponent} from "../../../shared/components/detail-product/
 
 
 @Component({
-  selector: 'app-strategy',
-  templateUrl: './strategy.component.html',
-  styleUrls: ['./strategy.component.scss'],
+  selector: 'app-family',
+  templateUrl: './family.component.html',
+  styleUrls: ['./family.component.scss'],
   standalone: true,
   imports: [CommonModule,MatDialogModule]
 })
-export class StrategyComponent implements OnInit {
+export class FamilyComponent implements OnInit {
 
   products: Products[] = [];
 
@@ -22,7 +22,7 @@ export class StrategyComponent implements OnInit {
 
   ngOnInit(): void {
     this.dataService.getProducts().subscribe(x => {
-      this.products = x.strategy;
+      this.products = x.family;
     });
   }
 

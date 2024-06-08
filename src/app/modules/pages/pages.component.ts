@@ -2,7 +2,7 @@ import {Component, ElementRef, OnDestroy, OnInit, ViewChild} from '@angular/core
 import {Subject} from 'rxjs';
 import {Router, RouterLink, RouterOutlet} from '@angular/router';
 import {NgOptimizedImage} from "@angular/common";
-import {FooterComponent} from "../../shared/footer/footer.component";
+import {FooterComponent} from "../../shared/components/footer/footer.component";
 
 
 

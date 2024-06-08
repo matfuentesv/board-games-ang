@@ -1,0 +1,14 @@
+
+<mat-dialog-content class="game-modal-content">
+  <img [src]="data.image" alt="{{ data.name }}" class="game-image">
+  <div class="game-details">
+    <h2>{{ data.name }}</h2>
+    <h3 class="game-price">{{ data.price }}</h3>
+    <p class="game-discount">Descuento: {{ data.discount }}</p>
+    <p>{{ data.description }}</p>
+    <div class="game-actions">
+      <button mat-button mat-dialog-close>Cerrar</button>
+      <button mat-raised-button color="primary">Añadir al Carrito</button>
+    </div>
+  </div>
+</mat-dialog-content>

@@ -17,6 +17,10 @@ export const routes: Routes = [
       {
         path: 'strategy',
         loadChildren: () => import('./modules/pages/strategy').then(r => r.strategyRoutes)
+      },
+      {
+        path: 'family',
+        loadChildren: () => import('./modules/pages/family').then(r => r.familyRoutes)
       }
      ]
   }

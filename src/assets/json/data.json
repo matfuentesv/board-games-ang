@@ -1,0 +1,90 @@
+{
+  "strategy": [
+    {
+      "name": "Azul",
+      "price": "$32.990",
+      "discount": "10%",
+      "description": "Juego de mesa abstracto diseñado por Michael Kiesling en el que 2 a 4 jugadores compiten por rellenar un mural con azulejos de la manera más óptima posible.",
+      "image": "../assets/azul.jpg"
+    },
+    {
+      "name": "Catan",
+      "price": "$25.000",
+      "discount": "15%",
+      "description": "Un juego emocionante que desafía tus habilidades tácticas.",
+      "image": "../assets/catan.jpg"
+    },
+    {
+      "name": "7 Wonders",
+      "price": "$30.000",
+      "discount": "20%",
+      "description": "Construye una civilización que resistirá la prueba del tiempo.",
+      "image": "../assets/wonders.jpg"
+    },
+    {
+      "name": "Stone Age",
+      "price": "$30.000",
+      "discount": "20%",
+      "description": "Un juego de estrategia que te transportará a la Edad de Piedra.",
+      "image": "../assets/stone.jpg"
+    },
+    {
+      "name": "Carcassonne",
+      "price": "$30.000",
+      "discount": "20%",
+      "description": "Un juego de colocación de losetas que construye ciudades medievales.",
+      "image": "../assets/carcasonne.jpg"
+    },
+    {
+      "name": "Pandemic",
+      "price": "$30.000",
+      "discount": "20%",
+      "description": "Trabaja en equipo para detener la propagación de enfermedades mundiales.",
+      "image": "../assets/pandemic.jpg"
+    }
+  ],
+  "family": [
+    {
+      "name": "Exploradores",
+      "price": "$32.990",
+      "discount": "10%",
+      "description": "Embárcate en una aventura emocionante con tu familia explorando mundos desconocidos.",
+      "image": "../assets/exploradores.jpg"
+    },
+    {
+      "name": "Días de Radio",
+      "price": "$25.000",
+      "discount": "15%",
+      "description": "Revive los días dorados de la radio en este juego nostálgico y educativo para todas las edades.",
+      "image": "../assets/dias-de-radio.jpg"
+    },
+    {
+      "name": "Formula D",
+      "price": "$30.000",
+      "discount": "20%",
+      "description": "Compite en emocionantes carreras de autos en pistas alrededor del mundo.",
+      "image": "../assets/formula-d.jpg"
+    },
+    {
+      "name": "Sumatra",
+      "price": "$30.000",
+      "discount": "20%",
+      "description": "Explora la exótica isla de Sumatra en este juego de aventura familiar.",
+      "image": "../assets/sumatra.jpg"
+    },
+    {
+      "name": "Viceroy",
+      "price": "$30.000",
+      "discount": "20%",
+      "description": "Conviértete en el gran viceroy y construye tu imperio en este juego de estrategia.",
+      "image": "../assets/viceroy.jpg"
+    },
+    {
+      "name": "Century",
+      "price": "$30.000",
+      "discount": "20%",
+      "description": "Viaja a través de los siglos en este juego épico de comercio y aventura.",
+      "image": "../assets/century.jpg"
+    }
+  ]
+}
