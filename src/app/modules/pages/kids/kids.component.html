@@ -1,0 +1,41 @@
+<main class="content">
+  <div class="container">
+    <h2 class="title">Juegos de Estrategia</h2>
+    <div class="game-list">
+      <div class="game-item" *ngFor="let x of products">
+        <div class="image-container">
+          <img [src]="x.image" alt="Azul">
+        </div>
+        <h3>{{x.name}}</h3>
+        <p class="price">Precio: {{x.price}}</p>
+        <p class="discount">Descuento: {{ x.discount }}</p>
+        <button class="preview-btn" (click)="openModal(x)">Vista Previa</button>
+      </div>
+    </div>
+  </div>
+</main>
+<section class="testimonials">
+  <div class="container">
+    <h2>Lo que nuestros clientes dicen</h2>
+    <div class="row">
+      <div class="col-md-4 testimonial-item">
+        <blockquote>
+          <p>"Elite Games tiene una excelente selección de juegos de mesa. ¡Me encanta comprar aquí!"</p>
+          <footer>- Juan Pérez</footer>
+        </blockquote>
+      </div>
+      <div class="col-md-4 testimonial-item">
+        <blockquote>
+          <p>"El servicio al cliente es excepcional y siempre encuentro lo que busco."</p>
+          <footer>- Ana Gómez</footer>
+        </blockquote>
+      </div>
+      <div class="col-md-4 testimonial-item">
+        <blockquote>
+          <p>"Los mejores precios y una entrega rápida. ¡Muy recomendable!"</p>
+          <footer>- Carlos López</footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>

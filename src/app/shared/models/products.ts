@@ -9,4 +9,6 @@ export interface Products {
 export interface ProductsResponse {
   strategy:Products[];
   family:Products[];
+  cooperative:Products[];
+  kids:Products[];
 }

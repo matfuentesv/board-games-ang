@@ -21,6 +21,22 @@ export const routes: Routes = [
       {
         path: 'family',
         loadChildren: () => import('./modules/pages/family').then(r => r.familyRoutes)
+      },
+      {
+        path: 'cooperative',
+        loadChildren: () => import('./modules/pages/cooperative').then(r => r.cooperativeRoutes)
+      },
+      {
+        path: 'kids',
+        loadChildren: () => import('./modules/pages/kids').then(r => r.kidsRoutes)
+      },
+      {
+        path: 'account',
+        loadChildren: () => import('./modules/pages/account').then(r => r.accountRoutes)
+      },
+      {
+        path: 'register',
+        loadChildren: () => import('./modules/pages/register').then(r => r.registerRoutes)
       }
      ]
   }

@@ -86,5 +86,93 @@
       "description": "Viaja a través de los siglos en este juego épico de comercio y aventura.",
       "image": "../assets/century.jpg"
     }
+  ],
+  "cooperative": [
+    {
+      "name": "Adventures Games Monocromo",
+      "price": "$32.990",
+      "discount": "10%",
+      "description": "Un juego de exploración para toda la familia, donde los jugadores descubren nuevas tierras y buscan tesoros escondidos.",
+      "image": "../assets/adventures-games-monocromo-sa.jpg"
+    },
+    {
+      "name": "Exit",
+      "price": "$25.000",
+      "discount": "15%",
+      "description": "Resuelve puzzles y escapa de las habitaciones en este emocionante juego de aventuras.",
+      "image": "../assets/exit.jpg"
+    },
+    {
+      "name": "Night of the Living Dead",
+      "price": "$30.000",
+      "discount": "20%",
+      "description": "Sobrelleva la invasión zombie cooperando con otros jugadores en este juego lleno de terror y estrategia.",
+      "image": "../assets/night-of-the-living-dead-espanol.jpg"
+    },
+    {
+      "name": "Rescate",
+      "price": "$30.000",
+      "discount": "20%",
+      "description": "Trabaja en equipo para salvar vidas en situaciones de emergencia.",
+      "image": "../assets/rescate.jpg"
+    },
+    {
+      "name": "La Tripulación",
+      "price": "$30.000",
+      "discount": "20%",
+      "description": "Embárcate en una misión espacial con tu equipo en este juego de cartas cooperativo.",
+      "image": "../assets/la-tripulacion.jpg"
+    },
+    {
+      "name": "Undo",
+      "price": "$30.000",
+      "discount": "20%",
+      "description": "Viaja en el tiempo y cambia la historia en este juego de misterio y cooperación.",
+      "image": "../assets/undo-4-fiebre-del-tesoro.jpg"
+    }
+  ],
+  "kids": [
+    {
+      "name": "Catan Junior",
+      "price": "$32.990",
+      "discount": "10%",
+      "description": "Un juego para los más pequeños donde exploran islas y buscan tesoros escondidos.",
+      "image": "../assets/catan-junior.jpg"
+    },
+    {
+      "name": "Leo",
+      "price": "$25.000",
+      "discount": "15%",
+      "description": "Ayuda a Leo el león a llegar a tiempo a su cita con el barbero en este divertido juego para niños.",
+      "image": "../assets/leo-va-al-barbero.jpg"
+    },
+    {
+      "name": "Concept Kids Animales",
+      "price": "$30.000",
+      "discount": "20%",
+      "description": "Un juego cooperativo donde los niños describen y adivinan animales usando iconos y pistas.",
+      "image": "../assets/concept-kids-animales.jpg"
+    },
+    {
+      "name": "Fabulantica",
+      "price": "$30.000",
+      "discount": "20%",
+      "description": "Explora el mágico mundo de Fabulantica y ayuda a los personajes a encontrar sus amigos desaparecidos.",
+      "image": "../assets/fabulantica.jpg"
+    },
+    {
+      "name": "Fantasma Blitz",
+      "price": "$30.000",
+      "discount": "20%",
+      "description": "Un juego de reacción rápida donde los jugadores atrapan objetos antes que sus oponentes.",
+      "image": "../assets/fantasma-blitz-dados.jpg"
+    },
+    {
+      "name": "Ghost Adventure",
+      "price": "$30.000",
+      "discount": "20%",
+      "description": "Un emocionante juego de aventuras donde los jugadores guían a un pequeño fantasma a través de misiones.",
+      "image": "../assets/ghost-adventure.jpg"
+    }
   ]
 }

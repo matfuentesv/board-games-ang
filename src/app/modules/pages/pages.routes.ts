@@ -14,6 +14,26 @@ export const pagesRoutes: Routes = [
       {
         path: 'strategy',
         loadChildren: () => import('./strategy').then(r => r.strategyRoutes)
+      },
+      {
+        path: 'family',
+        loadChildren: () => import('./family').then(r => r.familyRoutes)
+      },
+      {
+        path: 'cooperative',
+        loadChildren: () => import('./cooperative').then(r => r.cooperativeRoutes)
+      },
+      {
+        path: 'kids',
+        loadChildren: () => import('./kids').then(r => r.kidsRoutes)
+      },
+      {
+        path: 'account',
+        loadChildren: () => import('./account').then(r => r.accountRoutes)
+      },
+      {
+        path: 'register',
+        loadChildren: () => import('./register').then(r => r.registerRoutes)
       }
     ]
   }

@@ -1,4 +1,4 @@
-// src/app/strategy/family.routes.ts
+// src/app/strategy/register.routes.ts
 import { Routes } from '@angular/router';
 
 export const familyRoutes: Routes = [
