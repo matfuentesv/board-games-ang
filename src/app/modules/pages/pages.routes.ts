@@ -13,19 +13,19 @@ export const pagesRoutes: Routes = [
       },
       {
         path: 'strategy',
-        loadChildren: () => import('./strategy').then(r => r.strategyRoutes)
+        loadChildren: () => import('./categories/strategy').then(r => r.strategyRoutes)
       },
       {
         path: 'family',
-        loadChildren: () => import('./family').then(r => r.familyRoutes)
+        loadChildren: () => import('./categories/family').then(r => r.familyRoutes)
       },
       {
         path: 'cooperative',
-        loadChildren: () => import('./cooperative').then(r => r.cooperativeRoutes)
+        loadChildren: () => import('./categories/cooperative').then(r => r.cooperativeRoutes)
       },
       {
         path: 'kids',
-        loadChildren: () => import('./kids').then(r => r.kidsRoutes)
+        loadChildren: () => import('./categories/kids').then(r => r.kidsRoutes)
       },
       {
         path: 'login',
@@ -38,6 +38,10 @@ export const pagesRoutes: Routes = [
       {
         path: 'recover-password',
         loadChildren: () => import('./recover-password').then(r => r.recoverPasswordRoutes)
+      },
+      {
+        path: 'account',
+        loadChildren: () => import('./account').then(r => r.accountRoutes)
       }
     ]
   }

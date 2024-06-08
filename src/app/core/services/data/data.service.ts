@@ -16,7 +16,7 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   getProducts(): Observable<ProductsResponse> {
-    return this.http.get<ProductsResponse>(this.jsonUsersUrl);
+    return this.http.get<ProductsResponse>(this.jsonProducttUrl);
   }
 
   getUsers(): Observable<User[]> {

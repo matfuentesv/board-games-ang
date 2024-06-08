@@ -1,20 +1,20 @@
 
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {DataService} from "../../../core/services/data/data.service";
-import {Products} from "../../../shared/models/products";
+import {DataService} from "../../../../core/services/data/data.service";
+import {Products} from "../../../../shared/models/products";
 import {MatDialog, MatDialogModule} from "@angular/material/dialog";
-import {DetailProductComponent} from "../../../shared/components/detail-product/detail-product.component";
+import {DetailProductComponent} from "../../../../shared/components/detail-product/detail-product.component";
 
 
 @Component({
-  selector: 'app-strategy',
-  templateUrl: './strategy.component.html',
-  styleUrls: ['./strategy.component.scss'],
+  selector: 'app-cooperative',
+  templateUrl: './cooperative.component.html',
+  styleUrls: ['./cooperative.component.scss'],
   standalone: true,
   imports: [CommonModule,MatDialogModule]
 })
-export class StrategyComponent implements OnInit {
+export class CooperativeComponent implements OnInit {
 
   products: Products[] = [];
 
@@ -22,7 +22,7 @@ export class StrategyComponent implements OnInit {
 
   ngOnInit(): void {
     this.dataService.getProducts().subscribe(x => {
-      this.products = x.strategy;
+      this.products = x.cooperative;
     });
   }
 
