@@ -1,13 +1,13 @@
 export interface Products {
   name: string;
-  price: string;
-  discount: string;
+  price: number;
+  discount: number;
   description: string;
   image: string;
   category: string;
-  originalPrice: string;
+  originalPrice: number;
   rating: string;
-  reviews: string;
+  reviews: number;
 }
 
 export interface ProductsResponse {

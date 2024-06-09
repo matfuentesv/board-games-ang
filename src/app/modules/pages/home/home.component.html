@@ -41,21 +41,23 @@
             <h5 class="card-title">{{ product.category }}</h5>
             <p class="card-text">{{ product.description }}</p>
             <p class="price">
-              <span class="current-price">{{ product.price }}</span>
-              <span class="discount">{{ product.discount }}%</span>
-              <span class="original-price">{{ product.originalPrice }}</span>
+              <span class="current-price">{{ product.price  }}</span>
+              <span class="discount">{{ product.discount }}</span>
+              <span class="original-price">{{ product.originalPrice  }}</span>
             </p>
             <div class="rating">
               <span class="stars">{{ product.rating }}</span>
               <span class="reviews">({{ product.reviews }})</span>
             </div>
-            <button class="btn btn-primary">Agregar al Carrito</button>
+            <button class="btn btn-primary" (click)="addToCart(product)">Agregar al Carrito</button>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+
 
 <section class="testimonials">
   <div class="container">

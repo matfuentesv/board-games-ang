@@ -178,34 +178,34 @@
   "outstanding": [
     {
       "name": "Catan",
-      "price": "$25.000",
-      "discount": "15%",
+      "price": 25000,
+      "discount": 15,
       "description": "Un juego emocionante que desafía tus habilidades tácticas.",
       "image": "../assets/catan.jpg",
       "category": "Juego Estrategia",
-      "originalPrice": "$50.000",
+      "originalPrice": 50000,
       "rating": "★★★★★",
       "reviews": 35
     },
     {
       "name": "Formula D",
-      "price": "$30.000",
-      "discount": "20%",
+      "price": 30000,
+      "discount": 20,
       "description": "Compite en emocionantes carreras de autos en pistas alrededor del mundo.",
       "image": "../assets/formula-d.jpg",
       "category": "Juego Familiar",
-      "originalPrice": "$70.000",
+      "originalPrice": 70000,
       "rating": "★★★★★",
       "reviews": 35
     },
     {
       "name": "Rescate",
-      "price": "$80.000",
-      "discount": "20%",
+      "price": 80000,
+      "discount": 20,
       "description": "Trabaja en equipo para salvar vidas en situaciones de emergencia.",
       "image": "../assets/rescate.jpg",
       "category": "Juego Cooperativo",
-      "originalPrice": "$150.000",
+      "originalPrice": 150000,
       "rating": "★★★★★",
       "reviews": 35
     }
