@@ -3,9 +3,9 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  max-width: 500px; // Ajustar el ancho máximo del modal
-  max-height: 80vh; // Asegurar que el modal no sea más alto que el viewport
-  overflow: hidden; // Eliminar el scroll innecesario
+  max-width: 500px;
+  max-height: 80vh;
+  overflow: hidden;
 
   .game-details {
     text-align: center;
@@ -36,7 +36,7 @@
     }
 
     .game-image {
-      max-width: 50%; // Reducir el tamaño máximo de la imagen
+      max-width: 50%;
       height: auto;
       border-radius: 10px;
     }

@@ -37,7 +37,7 @@ export class KidsComponent implements OnInit {
 
   addToCart(product: any): void {
     this.cartService.addToCart(product);
-    console.log('Producto agregado al carrito:', product); // Añadido para depuración
-    alert(`${product.name} ha sido agregado al carrito.`);
+    console.log('Producto agregado al carrito:', product);
+
   }
 }

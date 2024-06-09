@@ -4,6 +4,7 @@ import {FooterComponent} from "../../shared/components/footer/footer.component";
 import {AuthService} from "../../core/services/auth/auth.service";
 import {NgIf, NgOptimizedImage} from "@angular/common";
 import {filter} from "rxjs";
+import {CartService} from "../../core/services/cart/cart.service";
 
 @Component({
   selector: 'app-pages',
@@ -22,11 +23,13 @@ export class PagesComponent implements OnInit {
 
   userName: string | null = null;
   userRole: string | null = null;
+  cartItemCount: number = 0;
 
   constructor(
     private authService: AuthService,
     private cdr: ChangeDetectorRef,
-    private router: Router
+    private router: Router,
+    private cartService: CartService
   ) {}
 
   ngOnInit(): void {
@@ -47,6 +50,9 @@ export class PagesComponent implements OnInit {
         this.userRole = this.authService.getUserRole();
         this.cdr.detectChanges();
       });
+    this.cartService.getCartItemCount().subscribe(count => {
+      this.cartItemCount = count;
+    });
   }
 
   logout() {

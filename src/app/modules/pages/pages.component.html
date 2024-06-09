@@ -40,6 +40,7 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" [routerLink]="['/cart']"><i class="fas fa-shopping-cart"></i> Mi carrito</a>
+        <span *ngIf="cartItemCount > 0" class="badge badge-danger">{{ cartItemCount }}</span>
       </li>
     </ul>
     <form class="form-inline ml-auto">

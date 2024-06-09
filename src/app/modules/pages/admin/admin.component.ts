@@ -38,14 +38,13 @@ export class AdminComponent implements OnInit {
   ngOnInit(): void {}
 
   showSection(event: Event, section: string): void {
-    event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+    event.preventDefault();
     this.currentSection = section;
   }
 
   onSubmitProduct(): void {
     if (this.productForm.valid) {
       console.log(this.productForm.value);
-      // Aquí puedes agregar la lógica para manejar el envío del formulario de productos
     } else {
       this.productForm.markAllAsTouched();
     }
@@ -54,7 +53,6 @@ export class AdminComponent implements OnInit {
   onSubmitUser(): void {
     if (this.userForm.valid) {
       console.log(this.userForm.value);
-      // Aquí puedes agregar la lógica para manejar el envío del formulario de usuarios
     } else {
       this.userForm.markAllAsTouched();
     }

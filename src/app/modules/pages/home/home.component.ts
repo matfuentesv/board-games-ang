@@ -31,10 +31,8 @@ export class HomeComponent  implements OnInit {
     });
   }
 
-  addToCart(product: any): void {
+  addToCart(product: Products): void {
     this.cartService.addToCart(product);
-    console.log('Producto agregado al carrito:', product); // Añadido para depuración
-    alert(`${product.name} ha sido agregado al carrito.`);
   }
 
 }

@@ -34,7 +34,6 @@ export class AccountComponent {
   }
 
   ngOnInit(): void {
-    // Cargar los datos del usuario
     const user = this.authService.getUser();
     if (user) {
       this.accountForm.patchValue({
@@ -49,9 +48,9 @@ export class AccountComponent {
 
   onSubmit(): void {
     if (this.accountForm.valid) {
-      // Actualizar los datos del usuario
+
       console.log(this.accountForm.value);
-      // Aquí puedes llamar a un método de tu servicio para actualizar los datos
+
     }
   }
 }

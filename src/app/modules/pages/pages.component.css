@@ -23,10 +23,26 @@
   font-size: 1em; /* Ajustar tamaño de fuente */
   margin-right: 0.5rem; /* Reducir margen entre enlaces */
   transition: color 0.3s;
+  position: relative;
+  display: flex;
+  align-items: center; /* Alinear elementos verticalmente */
 }
 
 .navbar-custom .nav-link:hover {
   color: #ff6f61;
+}
+
+.navbar-custom .badge-danger {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 0.4em 0.6em;
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 1;
+  position: absolute;
+  top: 8px;
+  right: -2px;
 }
 
 .navbar-nav.ml-auto {
@@ -104,6 +120,18 @@
   color: #16181b;
   text-decoration: none;
   background-color: #f8f9fa;
+}
+
+.badge-pill {
+  padding: 0.4em 0.6em;
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 10rem;
 }
 
 @media (max-width: 992px) {
