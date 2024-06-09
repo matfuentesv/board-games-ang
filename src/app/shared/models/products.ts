@@ -5,6 +5,9 @@ export interface Products {
   description: string;
   image: string;
   category: string;
+  originalPrice: string;
+  rating: string;
+  reviews: string;
 }
 
 export interface ProductsResponse {
