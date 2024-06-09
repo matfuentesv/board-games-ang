@@ -4,6 +4,7 @@ export interface Products {
   discount: string;
   description: string;
   image: string;
+  category: string;
 }
 
 export interface ProductsResponse {
@@ -11,4 +12,5 @@ export interface ProductsResponse {
   family:Products[];
   cooperative:Products[];
   kids:Products[];
+  outstanding: Products[];
 }

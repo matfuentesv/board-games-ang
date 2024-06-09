@@ -174,5 +174,31 @@
       "description": "Un emocionante juego de aventuras donde los jugadores guían a un pequeño fantasma a través de misiones.",
       "image": "../assets/ghost-adventure.jpg"
     }
+  ],
+  "outstanding": [
+    {
+      "name": "Catan",
+      "price": "$25.000",
+      "discount": "15%",
+      "description": "Un juego emocionante que desafía tus habilidades tácticas.",
+      "image": "../assets/catan.jpg",
+      "category": "Juego Estrategia"
+    },
+    {
+      "name": "Formula D",
+      "price": "$30.000",
+      "discount": "20%",
+      "description": "Compite en emocionantes carreras de autos en pistas alrededor del mundo.",
+      "image": "../assets/formula-d.jpg",
+      "category": "Juego Familiar"
+    },
+    {
+      "name": "Rescate",
+      "price": "$30.000",
+      "discount": "20%",
+      "description": "Trabaja en equipo para salvar vidas en situaciones de emergencia.",
+      "image": "../assets/rescate.jpg",
+      "category": "Juego Cooperativo"
+    }
   ]
 }

@@ -35,27 +35,11 @@
   <div class="container">
     <h2>Productos Destacados</h2>
     <div class="row">
-      <div class="col-md-4 d-flex align-items-stretch">
+      <div *ngFor="let x of products" class="col-md-4 d-flex align-items-stretch">
         <div class="product-item d-flex flex-column align-items-center justify-content-between">
-          <img src="assets/catan.jpg" alt="Producto 1">
-          <h3>Juego de Estrategia</h3>
-          <p>Un juego emocionante para poner a prueba tu mente.</p>
-          <a href="#" class="btn btn-primary">Comprar ahora</a>
-        </div>
-      </div>
-      <div class="col-md-4 d-flex align-items-stretch">
-        <div class="product-item d-flex flex-column align-items-center justify-content-between">
-          <img src="assets/formula-d.jpg" alt="Producto 2">
-          <h3>Juego Familiar</h3>
-          <p>Ideal para compartir en familia y pasar un buen rato juntos.</p>
-          <a href="#" class="btn btn-primary">Comprar ahora</a>
-        </div>
-      </div>
-      <div class="col-md-4 d-flex align-items-stretch">
-        <div class="product-item d-flex flex-column align-items-center justify-content-between">
-          <img src="assets/rescate.jpg" alt="Producto 3">
-          <h3>Juego Cooperativo</h3>
-          <p>Trabaja en equipo para alcanzar la victoria.</p>
+          <img [src]="x.image" alt="Producto 1">
+          <h3> {{x.category}}</h3>
+          <p>{{x.description}}</p>
           <a href="#" class="btn btn-primary">Comprar ahora</a>
         </div>
       </div>
