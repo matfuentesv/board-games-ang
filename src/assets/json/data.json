@@ -2,177 +2,273 @@
   "strategy": [
     {
       "name": "Azul",
-      "price": "$32.990",
-      "discount": "10%",
+      "price": 32990,
+      "discount": 10,
       "description": "Juego de mesa abstracto diseñado por Michael Kiesling en el que 2 a 4 jugadores compiten por rellenar un mural con azulejos de la manera más óptima posible.",
-      "image": "../assets/azul.jpg"
+      "image": "../assets/azul.jpg",
+      "category": "Juego Estrategia",
+      "originalPrice": 37000,
+      "rating": "★★★★★",
+      "reviews": 50
     },
     {
       "name": "Catan",
-      "price": "$25.000",
-      "discount": "15%",
+      "price": 25000,
+      "discount": 15,
       "description": "Un juego emocionante que desafía tus habilidades tácticas.",
-      "image": "../assets/catan.jpg"
+      "image": "../assets/catan.jpg",
+      "category": "Juego Estrategia",
+      "originalPrice": 50000,
+      "rating": "★★★★★",
+      "reviews": 35
     },
     {
       "name": "7 Wonders",
-      "price": "$30.000",
-      "discount": "20%",
+      "price": 30000,
+      "discount": 20,
       "description": "Construye una civilización que resistirá la prueba del tiempo.",
-      "image": "../assets/wonders.jpg"
+      "image": "../assets/wonders.jpg",
+      "category": "Juego Estrategia",
+      "originalPrice": 35000,
+      "rating": "★★★★★",
+      "reviews": 40
     },
     {
       "name": "Stone Age",
-      "price": "$30.000",
-      "discount": "20%",
+      "price": 30000,
+      "discount": 20,
       "description": "Un juego de estrategia que te transportará a la Edad de Piedra.",
-      "image": "../assets/stone.jpg"
+      "image": "../assets/stone.jpg",
+      "category": "Juego Estrategia",
+      "originalPrice": 35000,
+      "rating": "★★★★★",
+      "reviews": 30
     },
     {
       "name": "Carcassonne",
-      "price": "$30.000",
-      "discount": "20%",
+      "price": 30000,
+      "discount": 20,
       "description": "Un juego de colocación de losetas que construye ciudades medievales.",
-      "image": "../assets/carcasonne.jpg"
+      "image": "../assets/carcasonne.jpg",
+      "category": "Juego Estrategia",
+      "originalPrice": 35000,
+      "rating": "★★★★★",
+      "reviews": 45
     },
     {
       "name": "Pandemic",
-      "price": "$30.000",
-      "discount": "20%",
+      "price": 30000,
+      "discount": 20,
       "description": "Trabaja en equipo para detener la propagación de enfermedades mundiales.",
-      "image": "../assets/pandemic.jpg"
+      "image": "../assets/pandemic.jpg",
+      "category": "Juego Estrategia",
+      "originalPrice": 35000,
+      "rating": "★★★★★",
+      "reviews": 55
     }
   ],
   "family": [
     {
       "name": "Exploradores",
-      "price": "$32.990",
-      "discount": "10%",
+      "price": 32990,
+      "discount": 10,
       "description": "Embárcate en una aventura emocionante con tu familia explorando mundos desconocidos.",
-      "image": "../assets/exploradores.jpg"
+      "image": "../assets/exploradores.jpg",
+      "category": "Juego Familiar",
+      "originalPrice": 37000,
+      "rating": "★★★★★",
+      "reviews": 20
     },
     {
       "name": "Días de Radio",
-      "price": "$25.000",
-      "discount": "15%",
+      "price": 25000,
+      "discount": 15,
       "description": "Revive los días dorados de la radio en este juego nostálgico y educativo para todas las edades.",
-      "image": "../assets/dias-de-radio.jpg"
+      "image": "../assets/dias-de-radio.jpg",
+      "category": "Juego Familiar",
+      "originalPrice": 30000,
+      "rating": "★★★★☆",
+      "reviews": 15
     },
     {
       "name": "Formula D",
-      "price": "$30.000",
-      "discount": "20%",
+      "price": 30000,
+      "discount": 20,
       "description": "Compite en emocionantes carreras de autos en pistas alrededor del mundo.",
-      "image": "../assets/formula-d.jpg"
+      "image": "../assets/formula-d.jpg",
+      "category": "Juego Familiar",
+      "originalPrice": 35000,
+      "rating": "★★★★★",
+      "reviews": 35
     },
     {
       "name": "Sumatra",
-      "price": "$30.000",
-      "discount": "20%",
+      "price": 30000,
+      "discount": 20,
       "description": "Explora la exótica isla de Sumatra en este juego de aventura familiar.",
-      "image": "../assets/sumatra.jpg"
+      "image": "../assets/sumatra.jpg",
+      "category": "Juego Familiar",
+      "originalPrice": 35000,
+      "rating": "★★★★★",
+      "reviews": 25
     },
     {
       "name": "Viceroy",
-      "price": "$30.000",
-      "discount": "20%",
+      "price": 30000,
+      "discount": 20,
       "description": "Conviértete en el gran viceroy y construye tu imperio en este juego de estrategia.",
-      "image": "../assets/viceroy.jpg"
+      "image": "../assets/viceroy.jpg",
+      "category": "Juego Familiar",
+      "originalPrice": 35000,
+      "rating": "★★★★☆",
+      "reviews": 18
     },
     {
       "name": "Century",
-      "price": "$30.000",
-      "discount": "20%",
+      "price": 30000,
+      "discount": 20,
       "description": "Viaja a través de los siglos en este juego épico de comercio y aventura.",
-      "image": "../assets/century.jpg"
+      "image": "../assets/century.jpg",
+      "category": "Juego Familiar",
+      "originalPrice": 35000,
+      "rating": "★★★★★",
+      "reviews": 22
     }
   ],
   "cooperative": [
     {
       "name": "Adventures Games Monocromo",
-      "price": "$32.990",
-      "discount": "10%",
+      "price": 32990,
+      "discount": 10,
       "description": "Un juego de exploración para toda la familia, donde los jugadores descubren nuevas tierras y buscan tesoros escondidos.",
-      "image": "../assets/adventures-games-monocromo-sa.jpg"
+      "image": "../assets/adventures-games-monocromo-sa.jpg",
+      "category": "Juego Cooperativo",
+      "originalPrice": 37000,
+      "rating": "★★★★★",
+      "reviews": 30
     },
     {
       "name": "Exit",
-      "price": "$25.000",
-      "discount": "15%",
+      "price": 25000,
+      "discount": 15,
       "description": "Resuelve puzzles y escapa de las habitaciones en este emocionante juego de aventuras.",
-      "image": "../assets/exit.jpg"
+      "image": "../assets/exit.jpg",
+      "category": "Juego Cooperativo",
+      "originalPrice": 30000,
+      "rating": "★★★★☆",
+      "reviews": 28
     },
     {
       "name": "Night of the Living Dead",
-      "price": "$30.000",
-      "discount": "20%",
+      "price": 30000,
+      "discount": 20,
       "description": "Sobrelleva la invasión zombie cooperando con otros jugadores en este juego lleno de terror y estrategia.",
-      "image": "../assets/night-of-the-living-dead-espanol.jpg"
+      "image": "../assets/night-of-the-living-dead-espanol.jpg",
+      "category": "Juego Cooperativo",
+      "originalPrice": 35000,
+      "rating": "★★★★★",
+      "reviews": 45
     },
     {
       "name": "Rescate",
-      "price": "$30.000",
-      "discount": "20%",
+      "price": 30000,
+      "discount": 20,
       "description": "Trabaja en equipo para salvar vidas en situaciones de emergencia.",
-      "image": "../assets/rescate.jpg"
+      "image": "../assets/rescate.jpg",
+      "category": "Juego Cooperativo",
+      "originalPrice": 35000,
+      "rating": "★★★★★",
+      "reviews": 35
     },
     {
       "name": "La Tripulación",
-      "price": "$30.000",
-      "discount": "20%",
+      "price": 30000,
+      "discount": 20,
       "description": "Embárcate en una misión espacial con tu equipo en este juego de cartas cooperativo.",
-      "image": "../assets/la-tripulacion.jpg"
+      "image": "../assets/la-tripulacion.jpg",
+      "category": "Juego Cooperativo",
+      "originalPrice": 35000,
+      "rating": "★★★★☆",
+      "reviews": 32
     },
     {
       "name": "Undo",
-      "price": "$30.000",
-      "discount": "20%",
+      "price": 30000,
+      "discount": 20,
       "description": "Viaja en el tiempo y cambia la historia en este juego de misterio y cooperación.",
-      "image": "../assets/undo-4-fiebre-del-tesoro.jpg"
+      "image": "../assets/undo-4-fiebre-del-tesoro.jpg",
+      "category": "Juego Cooperativo",
+      "originalPrice": 35000,
+      "rating": "★★★★★",
+      "reviews": 25
     }
   ],
   "kids": [
     {
       "name": "Catan Junior",
-      "price": "$32.990",
-      "discount": "10%",
+      "price": 32990,
+      "discount": 10,
       "description": "Un juego para los más pequeños donde exploran islas y buscan tesoros escondidos.",
-      "image": "../assets/catan-junior.jpg"
+      "image": "../assets/catan-junior.jpg",
+      "category": "Juego Infantil",
+      "originalPrice": 37000,
+      "rating": "★★★★★",
+      "reviews": 15
     },
     {
       "name": "Leo",
-      "price": "$25.000",
-      "discount": "15%",
+      "price": 25000,
+      "discount": 15,
       "description": "Ayuda a Leo el león a llegar a tiempo a su cita con el barbero en este divertido juego para niños.",
-      "image": "../assets/leo-va-al-barbero.jpg"
+      "image": "../assets/leo-va-al-barbero.jpg",
+      "category": "Juego Infantil",
+      "originalPrice": 30000,
+      "rating": "★★★★☆",
+      "reviews": 18
     },
     {
       "name": "Concept Kids Animales",
-      "price": "$30.000",
-      "discount": "20%",
+      "price": 30000,
+      "discount": 20,
       "description": "Un juego cooperativo donde los niños describen y adivinan animales usando iconos y pistas.",
-      "image": "../assets/concept-kids-animales.jpg"
+      "image": "../assets/concept-kids-animales.jpg",
+      "category": "Juego Infantil",
+      "originalPrice": 35000,
+      "rating": "★★★★★",
+      "reviews": 20
     },
     {
       "name": "Fabulantica",
-      "price": "$30.000",
-      "discount": "20%",
+      "price": 30000,
+      "discount": 20,
       "description": "Explora el mágico mundo de Fabulantica y ayuda a los personajes a encontrar sus amigos desaparecidos.",
-      "image": "../assets/fabulantica.jpg"
+      "image": "../assets/fabulantica.jpg",
+      "category": "Juego Infantil",
+      "originalPrice": 35000,
+      "rating": "★★★★☆",
+      "reviews": 22
     },
     {
       "name": "Fantasma Blitz",
-      "price": "$30.000",
-      "discount": "20%",
+      "price": 30000,
+      "discount": 20,
       "description": "Un juego de reacción rápida donde los jugadores atrapan objetos antes que sus oponentes.",
-      "image": "../assets/fantasma-blitz-dados.jpg"
+      "image": "../assets/fantasma-blitz-dados.jpg",
+      "category": "Juego Infantil",
+      "originalPrice": 35000,
+      "rating": "★★★★★",
+      "reviews": 12
     },
     {
       "name": "Ghost Adventure",
-      "price": "$30.000",
-      "discount": "20%",
+      "price": 30000,
+      "discount": 20,
       "description": "Un emocionante juego de aventuras donde los jugadores guían a un pequeño fantasma a través de misiones.",
-      "image": "../assets/ghost-adventure.jpg"
+      "image": "../assets/ghost-adventure.jpg",
+      "category": "Juego Infantil",
+      "originalPrice": 35000,
+      "rating": "★★★★☆",
+      "reviews": 18
     }
   ],
   "outstanding": [
@@ -190,7 +286,7 @@
     {
       "name": "Formula D",
       "price": 30000,
-      "discount": 20,
+      "discount": 10,
       "description": "Compite en emocionantes carreras de autos en pistas alrededor del mundo.",
       "image": "../assets/formula-d.jpg",
       "category": "Juego Familiar",
@@ -201,7 +297,7 @@
     {
       "name": "Rescate",
       "price": 80000,
-      "discount": 20,
+      "discount": 15,
       "description": "Trabaja en equipo para salvar vidas en situaciones de emergencia.",
       "image": "../assets/rescate.jpg",
       "category": "Juego Cooperativo",

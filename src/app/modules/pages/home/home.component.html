@@ -41,9 +41,9 @@
             <h5 class="card-title">{{ product.category }}</h5>
             <p class="card-text">{{ product.description }}</p>
             <p class="price">
-              <span class="current-price">{{ product.price  }}</span>
+              <span class="current-price">{{ product.price | currency }}</span>
               <span class="discount">{{ product.discount }}</span>
-              <span class="original-price">{{ product.originalPrice  }}</span>
+              <span class="original-price">{{ product.originalPrice | currency }}</span>
             </p>
             <div class="rating">
               <span class="stars">{{ product.rating }}</span>
@@ -56,6 +56,8 @@
     </div>
   </div>
 </section>
+
+
 
 
 

@@ -22,7 +22,8 @@ export class HomeComponent  implements OnInit {
 
   products: Products[] = [];
 
-  constructor(private dataService: DataService,private cartService: CartService) { }
+  constructor(private dataService: DataService,
+              private cartService: CartService) { }
 
   ngOnInit(): void {
     this.dataService.getProducts().subscribe(x => {

@@ -8,6 +8,7 @@ export interface Products {
   originalPrice: number;
   rating: string;
   reviews: number;
+  quantity?: number; // Añadido optional quantity
 }
 
 export interface ProductsResponse {

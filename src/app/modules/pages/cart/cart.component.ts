@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {Products} from "../../../shared/models/products";
 import {CartService} from "../../../core/services/cart/cart.service";
+import {CommonModule, CurrencyPipe, NgForOf, NgIf, NgOptimizedImage} from "@angular/common";
 import {FormsModule} from "@angular/forms";
-import {CurrencyPipe, NgForOf, NgIf, NgOptimizedImage} from "@angular/common";
 
 
 @Component({
@@ -9,16 +10,17 @@ import {CurrencyPipe, NgForOf, NgIf, NgOptimizedImage} from "@angular/common";
   templateUrl: './cart.component.html',
   standalone: true,
   imports: [
+    CurrencyPipe,
     FormsModule,
     NgIf,
     NgForOf,
     NgOptimizedImage,
-    CurrencyPipe
+    CommonModule
   ],
   styleUrls: ['./cart.component.scss']
 })
 export class CartComponent implements OnInit {
-  items: any[] = [];
+  items: Products[] = [];
   total: number = 0;
   discount: number = 0;
 
@@ -31,11 +33,14 @@ export class CartComponent implements OnInit {
   }
 
   calculateTotal(): void {
-    this.total = this.items.reduce((acc, item) => acc + (item.price * item.quantity), 0);
-    this.discount = this.items.reduce((acc, item) => acc + ((item.originalPrice - item.price) * item.quantity), 0);
+    this.total = this.items.reduce((acc, item) => acc + (item.price * (item.quantity || 1)), 0);
+    this.discount = this.items.reduce((acc, item) => acc + ((item.price * (item.discount / 100)) * (item.quantity || 1)), 0);
   }
 
-  updateQuantity(productName: string, quantity: number): void {
+  updateQuantity(productName: string, quantity: number | undefined): void {
+    if (quantity === undefined || quantity < 1) {
+      quantity = 1;
+    }
     this.cartService.updateQuantity(productName, quantity);
     this.calculateTotal();
   }
