@@ -49,6 +49,10 @@ export const routes: Routes = [
       {
         path: 'admin',
         loadChildren: () => import('./modules/pages/admin').then(r => r.adminRoutes)
+      },
+      {
+        path: 'cart',
+        loadChildren: () => import('./modules/pages/cart').then(r => r.cartRoutes)
       }
      ]
   }
