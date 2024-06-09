@@ -17,6 +17,7 @@ export class AuthService {
   private userRoleSubject = new BehaviorSubject<string | null>(null);
   userRole$ = this.userRoleSubject.asObservable();
   private users: User[] = [];
+  private currentUser: User | null = null;
 
   constructor(private router: Router, private dataService: DataService) {
     this.loadUsers();
@@ -34,6 +35,7 @@ export class AuthService {
       this.isLoggedIn.next(true);
       this.userNameSubject.next(user.firstName);
       this.userRoleSubject.next(user.roles.includes('admin') ? 'admin' : 'customer');
+      this.currentUser = user;
       return true;
     } else {
       return false;
@@ -44,6 +46,7 @@ export class AuthService {
     this.isLoggedIn.next(false);
     this.userNameSubject.next(null);
     this.userRoleSubject.next(null);
+    this.currentUser = null;
     this.router.navigate(['/login']);
   }
 
@@ -57,5 +60,9 @@ export class AuthService {
 
   getUserRole(): string | null {
     return this.userRoleSubject.value;
+  }
+
+  getUser(): User | null {
+    return this.currentUser;
   }
 }

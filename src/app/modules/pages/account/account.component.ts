@@ -19,24 +19,39 @@ import {NgIf} from "@angular/common";
 })
 export class AccountComponent {
 
-  loginForm: FormGroup;
-  isValidUser = true;
+  accountForm: FormGroup;
 
-  constructor(private fb: FormBuilder, private authService: AuthService, private router: Router) {
-    this.loginForm = this.fb.group({
+  constructor(private fb: FormBuilder, private authService: AuthService) {
+    this.accountForm = this.fb.group({
+      firstName: ['', Validators.required],
+      lastName: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      password: ['', Validators.required]
+      phone: ['', Validators.required],
+      address: ['', Validators.required],
+      password: [''],
+      confirmPassword: ['']
     });
   }
 
-  onSubmit() {
-    if (this.loginForm.valid) {
-      const { email, password } = this.loginForm.value;
-      if (this.authService.login(email, password)) {
-        this.router.navigate(['/home']);
-      } else {
-        this.isValidUser = false;
-      }
+  ngOnInit(): void {
+    // Cargar los datos del usuario
+    const user = this.authService.getUser();
+    if (user) {
+      this.accountForm.patchValue({
+        firstName: user.firstName,
+        lastName: user.lastName,
+        email: user.email,
+        phone: user.phone,
+        address: user.address
+      });
+    }
+  }
+
+  onSubmit(): void {
+    if (this.accountForm.valid) {
+      // Actualizar los datos del usuario
+      console.log(this.accountForm.value);
+      // Aquí puedes llamar a un método de tu servicio para actualizar los datos
     }
   }
 }

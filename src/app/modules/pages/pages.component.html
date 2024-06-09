@@ -27,7 +27,7 @@
       <li class="nav-item" *ngIf="userName; else noUser">
         <a class="nav-link" href="#" style="color: white;">Hola, {{ userName }}</a>
         <ul class="submenu">
-          <li><a href="#">Mi cuenta</a></li>
+          <li><a [routerLink]="['account']">Mi cuenta</a></li>
           <li *ngIf="userRole === 'admin'"><a [routerLink]="['/admin']">Administración</a></li>
           <li><a (click)="logout()" href="#">Cerrar sesión</a></li>
         </ul>

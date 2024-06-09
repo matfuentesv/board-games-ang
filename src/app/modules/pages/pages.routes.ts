@@ -42,6 +42,10 @@ export const pagesRoutes: Routes = [
       {
         path: 'account',
         loadChildren: () => import('./account').then(r => r.accountRoutes)
+      },
+      {
+        path: 'admin',
+        loadChildren: () => import('./admin').then(r => r.adminRoutes)
       }
     ]
   }
