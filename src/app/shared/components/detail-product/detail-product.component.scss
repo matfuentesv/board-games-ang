@@ -1,61 +1,56 @@
-
 .game-modal-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  position: relative;
-}
+  max-width: 500px; // Ajustar el ancho máximo del modal
+  max-height: 80vh; // Asegurar que el modal no sea más alto que el viewport
+  overflow: hidden; // Eliminar el scroll innecesario
 
-.close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-}
+  .game-details {
+    text-align: center;
+    margin-bottom: 20px;
 
-.game-image {
-  max-width: 200px;
-  margin-bottom: 20px;
-}
+    .game-name {
+      font-size: 1.75rem;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
 
-.game-details {
-  text-align: center;
-}
+    .game-price {
+      font-size: 1.25rem;
+      color: #27ae60;
+      margin-bottom: 10px;
+    }
 
-.game-details h2 {
-  margin: 10px 0;
-}
+    .game-discount {
+      font-size: 1rem;
+      color: #e74c3c;
+      margin-bottom: 10px;
+    }
 
-.game-price {
-  color: #ff0000;
-  font-size: 24px;
-  margin: 10px 0;
-}
+    .game-image-container {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
 
-.game-discount {
-  color: #ff0000;
-  font-weight: bold;
-}
+    .game-image {
+      max-width: 50%; // Reducir el tamaño máximo de la imagen
+      height: auto;
+      border-radius: 10px;
+    }
 
-.game-actions {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  width: 100%;
-}
+    .game-description {
+      font-size: 0.875rem;
+      color: #7f8c8d;
+    }
+  }
 
-.game-actions button {
-  margin: 0 10px;
-}
-
-.mat-dialog-content {
-  overflow: visible;
-  padding: 0;
-}
-
-.mat-dialog-actions {
-  justify-content: center;
+  .game-actions {
+    text-align: center;
+    button {
+      margin-top: 20px;
+    }
+  }
 }

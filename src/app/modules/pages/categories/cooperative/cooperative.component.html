@@ -1,44 +1,46 @@
-<div>
-  <main class="content">
-    <div class="container">
-      <h2 class="title">Juegos de Cooperativos</h2>
-      <div class="game-list">
-        <div class="game-item" *ngFor="let x of products">
+<main class="content">
+  <div class="container">
+    <h2 class="title">Juegos de Cooperativos</h2>
+    <div class="row game-list">
+      <div class="col-md-4 col-sm-6 game-item" *ngFor="let x of products">
+        <div class="card">
           <div class="image-container">
-            <img [src]="x.image" alt="Azul">
+            <img [src]="x.image" alt="{{x.name}}" class="card-img-top">
           </div>
-          <h3>{{x.name}}</h3>
-          <p class="price">Precio: {{x.price}}</p>
-          <p class="discount">Descuento: {{ x.discount }}</p>
-          <button class="preview-btn" (click)="openModal(x)">Vista Previa</button>
+          <div class="card-body text-center">
+            <h3 class="card-title">{{x.name}}</h3>
+            <p class="price">Precio: {{x.price | currency:'CLP':true}}</p>
+            <p class="discount">Descuento: {{ x.discount }}%</p>
+            <button class="btn btn-outline-primary btn-sm" (click)="openModal(x)">Vista Previa</button>
+            <button class="btn btn-primary btn-sm" (click)="addToCart(x)">Agregar al Carrito</button>
+          </div>
         </div>
       </div>
     </div>
-  </main>
-  <section class="testimonials">
-    <div class="container">
-      <h2>Lo que nuestros clientes dicen</h2>
-      <div class="row">
-        <div class="col-md-4 testimonial-item">
-          <blockquote>
-            <p>"Elite Games tiene una excelente selección de juegos de mesa. ¡Me encanta comprar aquí!"</p>
-            <footer>- Juan Pérez</footer>
-          </blockquote>
-        </div>
-        <div class="col-md-4 testimonial-item">
-          <blockquote>
-            <p>"El servicio al cliente es excepcional y siempre encuentro lo que busco."</p>
-            <footer>- Ana Gómez</footer>
-          </blockquote>
-        </div>
-        <div class="col-md-4 testimonial-item">
-          <blockquote>
-            <p>"Los mejores precios y una entrega rápida. ¡Muy recomendable!"</p>
-            <footer>- Carlos López</footer>
-          </blockquote>
-        </div>
+  </div>
+</main>
+<section class="testimonials">
+  <div class="container">
+    <h2>Lo que nuestros clientes dicen</h2>
+    <div class="row">
+      <div class="col-md-4 testimonial-item">
+        <blockquote>
+          <p>"Elite Games tiene una excelente selección de juegos de mesa."</p>
+          <footer>- Juan Pérez</footer>
+        </blockquote>
+      </div>
+      <div class="col-md-4 testimonial-item">
+        <blockquote>
+          <p>"El servicio al cliente es excepcional y siempre encuentro lo que busco."</p>
+          <footer>- Ana Gómez</footer>
+        </blockquote>
+      </div>
+      <div class="col-md-4 testimonial-item">
+        <blockquote>
+          <p>"Los mejores precios y una entrega rápida. ¡Muy recomendable!"</p>
+          <footer>- Carlos López</footer>
+        </blockquote>
       </div>
     </div>
-  </section>
-</div>
-
+  </div>
+</section>

@@ -9,6 +9,7 @@ import {
 import {Products} from "../../models/products";
 import {MatButton, MatIconButton} from "@angular/material/button";
 import {MatIcon} from "@angular/material/icon";
+import {CurrencyPipe} from "@angular/common";
 
 @Component({
   selector: 'app-detail-product',
@@ -21,7 +22,8 @@ import {MatIcon} from "@angular/material/icon";
     MatButton,
     MatDialogClose,
     MatIcon,
-    MatIconButton
+    MatIconButton,
+    CurrencyPipe
   ],
   templateUrl: './detail-product.component.html',
   styleUrl: './detail-product.component.scss'

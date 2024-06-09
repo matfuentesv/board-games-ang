@@ -1,0 +1,75 @@
+.content {
+  padding: 20px 0;
+  .title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #2c3e50;
+  }
+  .game-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .game-item {
+      margin-bottom: 30px;
+      .card {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s;
+        &:hover {
+          transform: scale(1.05);
+        }
+        .image-container {
+          height: 200px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+          img {
+            max-height: 100%;
+            max-width: 100%;
+          }
+        }
+        .card-body {
+          padding: 15px;
+          .card-title {
+            font-size: 1.25rem;
+            color: #34495e;
+          }
+          .price, .discount {
+            font-size: 1rem;
+            color: #7f8c8d;
+          }
+          .btn {
+            margin: 5px 0;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.testimonials {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+  .container {
+    .testimonial-item {
+      blockquote {
+        background: #fff;
+        padding: 20px;
+        border-left: 5px solid #3498db;
+        margin: 0 0 20px;
+        p {
+          font-size: 1rem;
+          color: #7f8c8d;
+        }
+        footer {
+          font-size: 0.875rem;
+          color: #95a5a6;
+        }
+      }
+    }
+  }
+}
