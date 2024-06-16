@@ -1,29 +1,33 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed,  } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
+
 describe('AppComponent', () => {
+
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppComponent],
-    }).compileComponents();
-  });
+      imports: []
+    })
+      .compileComponents();
+  })
 
-  it('should create the app', () => {
+  it('debería crear el componente', () => {
     const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
+    const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'board-games-ang' title`, () => {
+  it(`debería tener el título 'board-games-ang'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
+    const app = fixture.debugElement.componentInstance;
     expect(app.title).toEqual('board-games-ang');
   });
 
-  it('should render title', () => {
+  it('debería renderizar el título', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, board-games-ang');
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('h1').textContent).toContain('board-games-ang');
   });
 });

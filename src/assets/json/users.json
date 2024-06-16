@@ -15,8 +15,8 @@
     "email": "jane.smith@example.com",
     "phone": "0987654321",
     "address": "456 Elm St",
-    "password": "password456",
-    "confirmPassword": "password456",
+    "password": "M4t14s01",
+    "confirmPassword": "M4t14s01",
     "roles": ["admin"]
   },
   {
