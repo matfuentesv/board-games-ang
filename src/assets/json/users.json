@@ -5,6 +5,7 @@
     "email": "john.doe@example.com",
     "phone": "1234567890",
     "address": "123 Main St",
+    "age": 28,
     "password": "password123",
     "confirmPassword": "password123",
     "roles": ["customer"]
@@ -15,6 +16,7 @@
     "email": "jane.smith@example.com",
     "phone": "0987654321",
     "address": "456 Elm St",
+    "age": 34,
     "password": "M4t14s01",
     "confirmPassword": "M4t14s01",
     "roles": ["admin"]
@@ -25,6 +27,7 @@
     "email": "alice.johnson@example.com",
     "phone": "1230984567",
     "address": "789 Oak St",
+    "age": 29,
     "password": "password789",
     "confirmPassword": "password789",
     "roles": ["customer"]
@@ -35,6 +38,7 @@
     "email": "bob.brown@example.com",
     "phone": "4561237890",
     "address": "101 Pine St",
+    "age": 22,
     "password": "password101",
     "confirmPassword": "password101",
     "roles": ["customer"]
@@ -45,6 +49,7 @@
     "email": "carol.davis@example.com",
     "phone": "7890123456",
     "address": "202 Maple St",
+    "age": 45,
     "password": "password202",
     "confirmPassword": "password202",
     "roles": ["customer"]
@@ -55,6 +60,7 @@
     "email": "dave.wilson@example.com",
     "phone": "3456789012",
     "address": "303 Birch St",
+    "age": 40,
     "password": "password303",
     "confirmPassword": "password303",
     "roles": ["admin"]
@@ -65,6 +71,7 @@
     "email": "eve.miller@example.com",
     "phone": "2345678901",
     "address": "404 Cedar St",
+    "age": 38,
     "password": "password404",
     "confirmPassword": "password404",
     "roles": ["customer"]
@@ -75,6 +82,7 @@
     "email": "frank.moore@example.com",
     "phone": "5678901234",
     "address": "505 Walnut St",
+    "age": 50,
     "password": "password505",
     "confirmPassword": "password505",
     "roles": ["customer"]
@@ -85,6 +93,7 @@
     "email": "grace.taylor@example.com",
     "phone": "6789012345",
     "address": "606 Pine St",
+    "age": 31,
     "password": "password606",
     "confirmPassword": "password606",
     "roles": ["customer"]
@@ -95,6 +104,7 @@
     "email": "hank.anderson@example.com",
     "phone": "7890123456",
     "address": "707 Oak St",
+    "age": 28,
     "password": "password707",
     "confirmPassword": "password707",
     "roles": ["customer"]

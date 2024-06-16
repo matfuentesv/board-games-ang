@@ -65,4 +65,8 @@ export class AuthService {
   getUser(): User | null {
     return this.currentUser;
   }
+
+  setUser(user:User){
+    this.users.push(user);
+  }
 }
